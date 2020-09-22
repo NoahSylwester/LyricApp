@@ -1,0 +1,8 @@
+<p>search works!</p>
+<ul>
+    <li *ngFor="let searchResult of searchResults">
+        <p>{{searchResult.result.title}}</p>
+        <i>{{searchResult.result.primary_artist.name}}</i>
+        <a href="/tab/{{searchResult.result.id}}">See tab</a>
+    </li>
+</ul>

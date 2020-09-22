@@ -1,0 +1,8 @@
+<div #embedContent>hello</div>
+<p>tab works!</p>
+<div *ngIf="song">
+    <h1>{{song.title}}</h1>
+    <img style="width: 200px;" src="{{song.album.cover_art_url}}" />
+    <img style="width: 200px;" src="{{song.song_art_image_url}}" />
+</div>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/{{song.url.slice(song.url.indexOf('=') + 1)}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
